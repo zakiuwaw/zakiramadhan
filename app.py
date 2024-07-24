@@ -4,6 +4,9 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
+# Memuat model dan preprocessor dari file
+model = joblib.load('model.pkl')
+
 # Fungsi untuk memproses input pengguna
 def preprocess_input(data):
     numerical_features = ['Age', 'Family size', 'latitude', 'longitude']
