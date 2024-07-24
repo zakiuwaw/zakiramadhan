@@ -1,3 +1,4 @@
+import joblib
 from pyexpat import model
 import streamlit as st
 import pandas as pd
