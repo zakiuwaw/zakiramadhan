@@ -86,7 +86,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Input pengguna
-age = st.number_input('Age', min_value=18, max_value=100)
+age = st.number_input('Umur', min_value=18, max_value=100)
 gender = st.selectbox('Gender', ['Male', 'Female'])
 marital_status = st.selectbox('Marital Status', ['Single', 'Married'])
 occupation = st.selectbox('Occupation', ['Student', 'Employee', 'Self Employed'])
@@ -98,7 +98,7 @@ longitude = st.number_input('Longitude', format="%f")
 pin_code = st.number_input('Pin code', min_value=100000, max_value=999999)
 
 user_input = {
-    'Umur': age,
+    'Age': age,
     'Gender': gender,
     'Marital Status': marital_status,
     'Occupation': occupation,
