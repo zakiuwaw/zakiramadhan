@@ -1,5 +1,4 @@
 import joblib
-from pyexpat import model
 import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -8,17 +7,16 @@ from sklearn.compose import ColumnTransformer
 # Memuat model dan preprocessor dari file
 model = joblib.load('model.pkl')
 
-# Fungsi untuk memproses input pengguna
-def preprocess_input(data):
-    numerical_features = ['Age', 'Family size', 'latitude', 'longitude']
-    categorical_features = ['Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Feedback']
-    
-    preprocessor = ColumnTransformer(
-        transformers=[
-            ('num', StandardScaler(), numerical_features),
-            ('cat', OneHotEncoder(), categorical_features)])
-    
-    return preprocessor.fit_transform(data)
+# Definisikan fitur numerik dan kategorikal
+numerical_features = ['Age', 'Family size', 'latitude', 'longitude']
+categorical_features = ['Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Feedback']
+
+# Preprocessor harus dibuat dan disesuaikan
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', StandardScaler(), numerical_features),
+        ('cat', OneHotEncoder(), categorical_features)
+    ])
 
 # Judul Aplikasi
 st.title('Aplikasi Prediksi Data Pelanggan')
@@ -52,8 +50,8 @@ input_data = pd.DataFrame({
     'Pin code': [pin_code]
 })
 
-# Pra-pemrosesan input
-input_data_processed = preprocess_input(input_data)
+# Pra-pemrosesan input menggunakan preprocessor yang sudah ditentukan
+input_data_processed = preprocessor.fit_transform(input_data)
 
 # Tombol Prediksi
 if st.button('Predict'):
