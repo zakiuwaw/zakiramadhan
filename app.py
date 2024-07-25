@@ -87,10 +87,10 @@ st.markdown("""
 
 # Input pengguna
 age = st.number_input('Umur', min_value=18, max_value=100)
-gender = st.selectbox('Gender', ['Male', 'Female'])
-marital_status = st.selectbox('Marital Status', ['Single', 'Married'])
-occupation = st.selectbox('Occupation', ['Student', 'Employee', 'Self Employed'])
-monthly_income = st.selectbox('Monthly Income', ['No Income', 'Below Rs.10000', '10001 to 25000', '25001 to 50000', 'More than 50000'])
+gender = st.selectbox('Jenis Kelamin', ['Male', 'Female'])
+marital_status = st.selectbox('Status Pernikahan', ['Belum Menikah', 'Sudah Menikah'])
+occupation = st.selectbox('Pekerjaan', ['Pelajar', 'Karyawan', 'Wira Swasta'])
+monthly_income = st.selectbox('Pendapatan Bulanan', ['Tidak Ada', 'Dibawah Rs.10000', '10001 hingga 25000', '25001 hingga 50000', 'Lebih dari 50000'])
 educational_qualifications = st.selectbox('Educational Qualifications', ['Under Graduate', 'Graduate', 'Post Graduate'])
 family_size = st.number_input('Family size', min_value=1, max_value=20)
 latitude = st.number_input('Latitude', format="%f")
