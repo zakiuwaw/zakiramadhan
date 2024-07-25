@@ -48,6 +48,8 @@ st.markdown("""
     .main {
         background-image: url('background.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     h1 {
         color: #4b4b4b;
