@@ -46,7 +46,7 @@ def preprocess_input(user_input):
 st.markdown("""
     <style>
     .main {
-        background-image: url('background.jpg');
+        background-image: url('path_to_your_background_image.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
