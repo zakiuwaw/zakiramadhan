@@ -74,7 +74,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Antarmuka Streamlit
-st.title("Jancok Feedback Pelanggan Online Food")
+st.title("Analisis Keberadaan Data Pelanggan di Dataset Bulan-Bulan Sebelumnya")
 
 st.markdown("""
     <style>
@@ -82,7 +82,7 @@ st.markdown("""
         background-color: #87CEEB;
     }
     </style>
-    <h3>Masukkan Data Pelanggan</h3>
+    <h3>Masukkan Data Pelanggan yang ingin diketahui</h3>
 """, unsafe_allow_html=True)
 
 # Input pengguna
@@ -110,7 +110,7 @@ user_input = {
     'Pin code': pin_code
 }
 
-if st.button('Predict'):
+if st.button('Telusuri'):
     user_input_processed = preprocess_input(user_input)
     try:
         prediction = model.predict(user_input_processed)
@@ -120,6 +120,6 @@ if st.button('Predict'):
 
 # Tambahkan elemen HTML untuk output
 st.markdown("""
-    <h3>Output Prediksi</h3>
-    <p>Hasil prediksi akan ditampilkan di sini.</p>
+    <h3></h3>
+    <p></p>
 """, unsafe_allow_html=True)
