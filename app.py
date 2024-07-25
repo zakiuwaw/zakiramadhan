@@ -42,11 +42,12 @@ def preprocess_input(user_input):
     processed_input = pd.DataFrame(processed_input)
     processed_input[numeric_features] = scaler.transform(processed_input[numeric_features])
     return processed_input
-# CSS for styling
+# CSS for styling with background image
 st.markdown("""
     <style>
     .main {
-        background-color: #87CEEB;
+        background-image: url('path_to_your_background_image.jpg');
+        background-size: cover;
     }
     h1 {
         color: #4b4b4b;
