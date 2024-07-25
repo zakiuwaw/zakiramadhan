@@ -74,7 +74,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Antarmuka Streamlit
-st.title("Analisis Keberadaan Data Pelanggan di Dataset Bulan-Bulan Sebelumnya")
+st.title("Analisis Keberadaan Data Pelanggan")
 
 st.markdown("""
     <style>
@@ -98,7 +98,7 @@ longitude = st.number_input('Longitude', format="%f")
 pin_code = st.number_input('Pin code', min_value=100000, max_value=999999)
 
 user_input = {
-    'Age': age,
+    'Umur': age,
     'Gender': gender,
     'Marital Status': marital_status,
     'Occupation': occupation,
