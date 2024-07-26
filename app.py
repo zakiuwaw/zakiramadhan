@@ -117,7 +117,7 @@ if st.button('Telusuri'):
     user_input_processed = preprocess_input(user_input)
     try:
         prediction = model.predict(user_input_processed)
-        st.write(f'Prediction: {prediction[0]}')
+        st.write(f'Hasil Prediksi: {prediction[0]}')
     except ValueError as e:
         st.error(f"Error in prediction: {e}")
 
