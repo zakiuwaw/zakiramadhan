@@ -123,6 +123,6 @@ if st.button('Telusuri'):
 
 # Tambahkan elemen HTML untuk output
 st.markdown("""
-    <h3></h3>
-    <p></p>
+    <h3> Keterangan </h3>
+    <p>) 0 : Tidak ada data pembeli dengan kriteria tersebut dalam dataset<br> 1 : Terdapat data pembeli dengan kriteria tersebut dalam dataset</p>
 """, unsafe_allow_html=True)
