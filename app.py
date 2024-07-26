@@ -128,6 +128,7 @@ st.markdown("""
         color: #4c4c4c;
     }
     </style>
-    <h3> Keterangan </h3>
-    <p> 0 : Tidak ada data pembeli dengan kriteria tersebut dalam dataset<br> 1 : Terdapat data pembeli dengan kriteria tersebut dalam dataset</p>
+    Keterangan
+    0 : Tidak ada data pembeli dengan kriteria tersebut dalam dataset
+    1 : Terdapat data pembeli dengan kriteria tersebut dalam dataset
 """, unsafe_allow_html=True)
