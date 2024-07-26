@@ -125,7 +125,7 @@ if st.button('Telusuri'):
 st.markdown("""
 <style>
     .black-text {
-        color: #4c4c4c;
+        color: #4b4b4b;
     }
     </style>
     Keterangan
